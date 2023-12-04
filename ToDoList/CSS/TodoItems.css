@@ -1,0 +1,38 @@
+
+    .todo-items {
+         display: flex;
+         justify-content: space-between;
+         padding: 16px 0px;
+         align-items: center;
+    }
+    .todo-items img {
+        width: 30px;
+    }
+    .items-container {
+        display: flex;
+    }
+    .items-container img{
+        margin-left: 20px;
+    }
+    .todo-items-tex {
+        padding-left: brown;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    .cross-div {
+    display: flex;
+    /* margin-left: 600px; */
+    margin-top: 0px; 
+    cursor: pointer;
+    }
+    .cross {
+        cursor: pointer;
+        width: 30px;
+        margin-top: 0px;
+    }
+    .cross img{
+        margin-top: 0px;
+    }
+    .line-through {
+        text-decoration: line-through 3px solid rgb(206, 2, 2);
+    }
