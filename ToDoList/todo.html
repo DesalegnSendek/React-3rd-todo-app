@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <script>
+            // Define an array to store the todo items
+let todos = [];
+
+// Function to add a new todo item
+function addTodo() {
+  const todoInput = document.getElementById("todo-input");
+  const todoText = todoInput.value.trim();
+
+  if (todoText !== "") {
+    const todoItem = {
+      id: Date.now(),
+      text: todoText,
+      completed: false
+    };
+
+    todos.push(todoItem);
+    todoInput.value = "";
+
+    renderTodos();
+  }
+}
+
+// Function to toggle the completion status of a todo item
+function toggleTodoStatus(todoId) {
+  todos = todos.map(todo => {
+    if (todo.id === todoId) {
+      return {
+        ...todo,
+        completed: !todo.completed
+      };
+    }
+    return todo;
+  });
+
+  renderTodos();
+}
+
+// Function to remove a todo item
+function removeTodo(todoId) {
+  todos = todos.filter(todo => todo.id !== todoId);
+
+  renderTodos();
+}
+
+// Function to render the todo items
+function renderTodos() {
+  const todoList = document.getElementById("todo-list");
+  todoList.innerHTML = "";
+
+  todos.forEach(todo => {
+    const todoItem = document.createElement("li");
+
+    const todoText = document.createElement("span");
+    todoText.textContent = todo.text;
+
+    if (todo.completed) {
+      todoText.style.textDecoration = "line-through";
+    }
+
+    const todoCheckbox = document.createElement("input");
+    todoCheckbox.type = "checkbox";
+    todoCheckbox.checked = todo.completed;
+    todoCheckbox.addEventListener("change", () => toggleTodoStatus(todo.id));
+
+    const todoRemoveButton = document.createElement("button");
+    todoRemoveButton.textContent = "Remove";
+    todoRemoveButton.addEventListener("click", () => removeTodo(todo.id));
+
+    todoItem.appendChild(todoCheckbox);
+    todoItem.appendChild(todoText);
+    todoItem.appendChild(todoRemoveButton);
+
+    todoList.appendChild(todoItem);
+  });
+}
+
+// Listen for form submission
+const todoForm = document.getElementById("todo-form");
+todoForm.addEventListener("submit", event => {
+  event.preventDefault();
+  addTodo();
+});
+
+// Initial rendering of todos
+renderTodos();
+    </script>
+</head>
+<body>
+    <h1>Todo App</h1>
+
+    <form id="todo-form" onSubmit="todoForm">
+      <input type="text" id="todo-input" placeholder="Enter a todo" />
+      <button type="submit" onSubmit="todoForm">Add Todo</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+</body>
+</html> -->
