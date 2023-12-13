@@ -1,18 +1,22 @@
 //array of objects
+
+const fruits = ['apple', 'banana', 'orange'];
+
+//array data
 const products = [
   { id: 1, name: 'Shirt', price: 20 },
   { id: 2, name: 'Pants', price: 30 },
   { id: 3, name: 'Shoes', price: 50 },
 ];
 
+//array form data
 const animals = [
   { id: 1, name: 'Dog', canFly: false },
   { id: 2, name: 'Bird', canFly: true },
   { id: 3, name: 'Fish', canFly: false },
 ];
 
-const fruits = ['apple', 'banana', 'orange'];
-
+//function
 function Product(props) {
   const { name, price } = props;
   return (
@@ -23,6 +27,7 @@ function Product(props) {
   );
 }
 
+//function
 function Animal(props) {
   const { name, canFly } = props;
   return (
@@ -54,11 +59,11 @@ function Map() {
 
     <div>
     <h1>Fruits</h1>
-    <ul>
+    <ol>
       {fruits.map((fruit) => (
         <li key={fruit}>{fruit}</li>
       ))}
-    </ul></div>
+    </ol></div>
     </>
   );
 }
