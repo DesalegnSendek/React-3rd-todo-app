@@ -32,6 +32,7 @@
     }
     .cross img{
         margin-top: 0px;
+        width: 200px;
     }
     .line-through {
         text-decoration: line-through 3px solid rgb(206, 2, 2);

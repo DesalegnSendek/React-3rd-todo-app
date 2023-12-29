@@ -1,0 +1,13 @@
+button {
+    width: 100px;
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    border-radius: 10px;
+    background-color: aqua;
+    margin: 5px;
+    vertical-align: top;
+    font-weight: 600;
+}

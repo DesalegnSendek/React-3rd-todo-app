@@ -1,5 +1,7 @@
 //array of objects
 
+import Counter from "../Counter/Counter.jsx";
+
 const fruits = ['apple', 'banana', 'orange'];
 
 //array data
@@ -38,7 +40,9 @@ function Animal(props) {
   );
 }
 
-
+function Expression(){
+  <h1>Hello Here!</h1>
+}
 
 
 function Map() {
